@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* to set background of full screen */
+body{
+    background-color: rgb(2, 9, 24);
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+/* to make grids */
+.maincontainer{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+    padding-top: 40px;
+    margin: auto;
+}
+/* to design the sidebar */
+.sidebar{
+    height: 110vh;
+    background-color: rgb(5, 2, 23);
+    border-radius: 16px;
+    border: 1px solid rgb(62, 41, 183);
+    padding: 40px;
+    position: sticky;
+    top: 40px;
+}
+/* to design the mainbar */
+.mainbar{
+    background-color: rgb(5, 2, 23);
+    border-radius: 16px;
+    border: 1px solid rgb(62, 41, 183);
+    padding: 40px;
+}
+/* to set the profile image */
+.profile img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid rgb(62, 41, 183);
+}
+/* to set the name */
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: rgb(227, 220, 138);
+}
+/* to set the present status */
+.profile p{
+    background-color: rgb(6, 3, 35);
+    padding: 5px 15px;
+    color: rgb(227, 220, 138);
+    border: 1px solid rgb(62, 41, 183);
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+/* to arrande the profile information in centre */
+.profile{
+    text-align: center;
+}
+/* to write the contact details */
+.contact{
+    margin: 30px;
+    /* to add the horizontal line */
+    border-top: 2px solid rgb(62, 41, 183);
+    padding-top: 20px;
+}
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: rgb(227, 220, 138);
+}
+.value{
+    color: rgb(227, 220, 138);
+    text-decoration: none;
+}
+.email .phone{
+    margin-bottom: 25px;
+}
+/* Social Media */
+.social{
+    margin: 30px;
+    /* to add the horizontal line */
+    border-top: 2px solid rgb(62, 41, 183);
+    padding-top: 20px;
+    text-align: center;
+}
+.social img{
+    height: 24px;
+    width: 24px;
+    margin: 5px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(44%) saturate(1617%) hue-rotate(346deg) brightness(91%) contrast(94%);
+    transition: 0.3s ease;
+}
+.social img:hover{
+    filter: brightness(0) saturate(0) invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(0) contrast(0);
+}
+/* main content */
+/* navigation */
+#navigation{
+    border-bottom: 2px solid rgb(62, 41, 183);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(62, 41, 183);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.active, nav a:hover{
+    color: rgb(227, 220, 138);
+}
+/* about me */
+.heading{
+    color: aliceblue;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: rgb(227, 220, 138);
+    margin-bottom: 15px;
+}
+.content{
+    text-align: justify;
+    color: aliceblue;
+}
+#aboutme{
+         margin-bottom: 30px;
+}
+/* skills section */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(120px,1fr));
+    gap: 35px;
+}
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(62, 41, 183);
+    background-color: rgb(2, 9, 24);
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(44%) saturate(1617%) hue-rotate(346deg) brightness(91%) contrast(94%);
+    margin-bottom: 15px;
+}
+.item h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+#skills{
+    margin-bottom: 30px;
+}
+/* education */
+.edtech{
+    position: relative;
+}
+.year{
+    font-size: 0.9rem;
+    color: aliceblue;
+    margin-bottom: 5px;
+}
+.tenth{
+      color: aliceblue;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+}
+.school{
+    font-style: italic;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.work{
+    color: aliceblue;
+}
+
+.edu1, .edu2{
+    padding: 25px;
+    position: relative;
+}
+.goal{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid rgb(227, 220, 138);
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    z-index: 5;
+}
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 38px;
+    bottom: 32px;
+    left: 5px;
+    border: 2px solid rgb(62, 41, 183);
+}
+/* portfolio */
+.project-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.project{
+    background-color: rgb(6, 3, 35);
+    border-radius: 12px;
+    border: 1px solid rgb(62, 41, 183);
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.project:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.project img{
+    height: 250px;
+    width: 355px;
+    object-fit: cover;
+}
+.card{
+    padding: 20px;
+}
+.card h3{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.card p{
+    color: aliceblue;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.card span{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(227, 220, 138);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
